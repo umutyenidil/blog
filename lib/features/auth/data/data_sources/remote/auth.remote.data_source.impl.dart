@@ -61,8 +61,29 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
   Session? get currentUserSession => _supabaseClient.auth.currentSession;
 
   @override
-  Future<UserModel?> getCurrentUserData() {
-    // TODO: implement getCurrentUserData
-    throw UnimplementedError();
+  Future<UserModel?> getCurrentUserData() async {
+    try {
+      if (currentUserSession == null) {
+        return null;
+      }
+
+      final userData = await _supabaseClient
+          .from(
+            'profiles',
+          )
+          .select(
+            'id name',
+          )
+          .eq(
+            'id',
+            currentUserSession!.user.id,
+          );
+
+      return UserModel.fromJson(userData.first).copyWith(
+        email: currentUserSession!.user.email,
+      );
+    } catch (e) {
+      throw ServerException(e.toString());
+    }
   }
 }

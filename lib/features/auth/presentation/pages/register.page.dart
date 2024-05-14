@@ -1,4 +1,3 @@
-import 'package:blog/core/common/widgets/animations/loading.animation.dart';
 import 'package:blog/core/constants/edge_insets.constants.dart';
 import 'package:blog/core/constants/text_style.constants.dart';
 import 'package:blog/core/theme/app_palette.dart';
