@@ -1,8 +1,6 @@
-import 'package:blog/app.dart';
 import 'package:blog/core/constants/border_radius.constants.dart';
 import 'package:blog/core/constants/edge_insets.constants.dart';
 import 'package:blog/features/blog/domain/entities/blog.entity.dart';
-import 'package:blog/features/blog/presentation/blocs/blog/blog_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 

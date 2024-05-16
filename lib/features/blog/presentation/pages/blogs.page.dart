@@ -1,8 +1,6 @@
 import 'package:blog/core/common/widgets/animations/loading.animation.dart';
 import 'package:blog/core/constants/double.constants.dart';
 import 'package:blog/core/constants/edge_insets.constants.dart';
-import 'package:blog/core/theme/app_palette.dart';
-import 'package:blog/core/utils/show_loading.dart';
 import 'package:blog/core/utils/show_snackbar.dart';
 import 'package:blog/features/blog/presentation/blocs/blog/blog_bloc.dart';
 import 'package:blog/features/blog/presentation/pages/blog_add.page.dart';

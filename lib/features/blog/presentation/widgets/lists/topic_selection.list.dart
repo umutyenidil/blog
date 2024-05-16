@@ -1,5 +1,4 @@
 import 'package:blog/core/constants/edge_insets.constants.dart';
-import 'package:blog/core/theme/app_palette.dart';
 import 'package:blog/features/blog/presentation/widgets/chips/topic.chip.dart';
 import 'package:flutter/material.dart';
 

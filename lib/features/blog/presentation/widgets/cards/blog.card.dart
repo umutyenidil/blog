@@ -1,7 +1,5 @@
 import 'package:blog/core/constants/border_radius.constants.dart';
-import 'package:blog/core/constants/color.constants.dart';
 import 'package:blog/core/constants/edge_insets.constants.dart';
-import 'package:blog/core/theme/app_palette.dart';
 import 'package:blog/core/utils/get_color_from_string.dart';
 import 'package:blog/core/utils/get_reading_time.dart';
 import 'package:blog/features/blog/domain/entities/blog.entity.dart';
