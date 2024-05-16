@@ -72,7 +72,7 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
             'profiles',
           )
           .select(
-            'id name',
+            'id, name',
           )
           .eq(
             'id',

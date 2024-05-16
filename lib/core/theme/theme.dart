@@ -19,8 +19,14 @@ class AppTheme {
     ),
     inputDecorationTheme: InputDecorationTheme(
       contentPadding: EdgeInsetsConstants.ALL24,
+      border: _border(),
       enabledBorder: _border(),
       focusedBorder: _border(AppPallete.gradient2),
+      errorBorder: _border(AppPallete.errorColor),
+    ),
+    chipTheme: ChipThemeData(
+      color: WidgetStateProperty.all(AppPallete.backgroundColor),
+      side: BorderSide.none,
     ),
   );
 }
